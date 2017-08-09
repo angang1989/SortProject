@@ -9,8 +9,15 @@ import com.angang.Util.PrintUtil;
  */
 public class StraightInsertion{
 	public static void main(String[] args){
-		int a[] = {3,2,5,3,2,6,34,2,7,1,12};
+		int a[] = {3,2,5,3,2,6,34,2,7,1,12,28};
+		System.out.print("before sort:");
+		PrintUtil.print(a, a.length-1);
+		
+		System.out.println("sorting:");
 		StraightInsertion.insertSort(a);
+		
+		System.out.print("after sort:");
+		PrintUtil.print(a, a.length-1);
 	}
 	
 	/**
@@ -48,7 +55,7 @@ public class StraightInsertion{
 //			
 //			j=i;
 //			
-//			while(j>0 && temp<a[j-1]){
+//			while(j>=0 && temp<a[j-1]){
 //				a[j] = a[j-1];
 //				j--;
 //			}
